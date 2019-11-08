@@ -1,0 +1,9 @@
+{% extends "application/common/base.html" %}
+
+{% block content %}
+
+    <h1>{{ articles.title }}</h1>
+    <h6>Опубликованно: {{ articles.date|date:"Y-m-d в H:i:s" }}</h6>
+    <p>{{ articles.post|safe|linebreaks }}</p>
+
+{% endblock %}

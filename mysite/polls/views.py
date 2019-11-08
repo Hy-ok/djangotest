@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'homePage.html')
+    return render(request, 'polls/homePage.html')
